@@ -12,12 +12,7 @@ public class Receiver {
 
     @Bean
     public Consumer<Message> consumer() {
-        return message -> {
-            System.out.println("message received...");
-            System.out.println("message from "+message.getFrom());
-            System.out.println("message to "+message.getTo());
-            System.out.println("message content "+message.getContent());
-        };
+        return message -> log.info("message received  : {} ", message);
     }
 
 }
