@@ -1,5 +1,6 @@
-package com.spring.training;
+package com.spring.training.messaging;
 
+import com.spring.training.model.Message;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;

@@ -3,7 +3,7 @@ spring:
       consumer:
         properties:
           spring.json.trusted.packages: '*'
-          spring.json.value.default.type: com.spring.training.Message
+          spring.json.value.default.type: com.spring.training.model.Message
           spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
   cloud:
     function:
